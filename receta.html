@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/style.css" type="text/css"/>	
+	<link rel='shortcut icon' href='img/icon-64.png' type='image/x-icon' />	
+  <title>Carvimed</title>
+</head>
+<body>
+      <main class="container">
+        <header class="hero">
+            <nav class="nav">
+                <a href="index.html" class="nav__name"><img src="img/carvimed-icontext.png" alt="" class="nav__logo"></a>
+                <button class="nav__button">
+                    <img src="img/hamburguer.svg" alt="Icono de menu" class="nav__menu">
+                </button>
+                <ul class="nav__ul no-activo">
+                    <li class="nav__ul_li"><a href="index.html" class="nav__ul__link">Inicio</a></li>
+                    <li class="nav__ul_li"><a href="receta.html" class="nav__ul__link">Registrar</a></li>
+                    <li class="nav__ul_li"><a href="historial.html" class="nav__ul__link">Historial</a></li>
+                </ul>
+            </nav>
+        </header>
+    <form action="#" method="post" id="recetaForm">
+      <h2>Receta Médica</h2><br>
+      <label for="cedulaProfesional">Cedula profesional del médico</label>
+      <input type="text" name="cedulaProfesional" id="cedulaProfesional" required maxlength="10" minlength="10"><br>
+      <label for="tipoEnfermedad">Tipo de enfermedad</label>
+      <select name='tipoEnfermedad' id = 'tipoEnfermedad' required> 
+        <option value = '' selected></option>		
+        <option value = 'Respiratoria'>Respiratoria</option>
+        <option value = 'Digestiva'>Digestiva</option>
+        <option value = 'Cutánea'>Cutánea</option>
+        <option value = 'Músculo-esquéletica'>Músculo-esquéletica</option>
+      </select><br>
+      <button>Guardar</button>
+    </form>
+    <label id="items">
+  </main>
+  <script src="js/app.js" type = "module"></script>  
+</body>
+</html>
